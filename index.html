@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parentDiv">
+        <h1 id="header" >JavaScript Events</h1>
+        <button id="btn">Cilck me</button>
+    </div>
+    
+
+    <script>
+        // let btn = document.getElementById('btn')
+        let parent = document.getElementById('parentDiv')
+        // let heading = document.getElementById('header')
+
+        // btn.onclick = expression
+
+        // function expression(){
+        //     heading.innerText = "Namasthe Javascript"
+        //     parent.appendChild(heading)
+        // }
+
+        let h1 = document.createElement('h1')
+        let h2 = document.createElement('h1')
+        let h3 = document.createElement('h1')
+
+        // These 3 methods are used to create element content, textContent() and innerText() used to add only plain text, But innerHtml used to add an Html element
+        h1.innerHTML = "<mark style='color:blue;background-color:pink' >Hello, I'm new 1</mark>"
+        h2.textContent = `Hello, I'm new 2`
+        h3.innerText = `Hello, I'm new 3`
+        parent.appendChild(h1)
+        h1.replaceWith(h1,h2,h3) // h1 replaced by h1,h2 and h3 elements
+        // parent.removeChild(h1)  //Rempving elememt from parent div
+        // h2.remove()  //Removing element
+
+    </script>
+</body>
+</html>
